@@ -49,7 +49,7 @@ http://ikjo.com/search?q=<script>alert("Hello!")</script>
 ### XSS 대책
 + 클라이언트 단에서 XSS 취약점이 있는 innerHTML 사용을 자제한다.
   + 그래도 HTML5에서는 innerHTML을 통해 주입한 스크립트는 실행되지 않는다.
-  + 하지만 onerror 이벤트 송석을 통한 스크립트 주입 시 스크립트 실행 가능
+  + 하지만 onerror 이벤트 속성을 통한 스크립트 주입 시 스크립트 실행 가능
   + 가급적 innerHTML로 검증되지 않은 데이터를 넣지 않고 textContent나 innetText를 사용하자(스크립트 실행 X)
 + 쿠키에 HttpOnly 옵션 활성화
   + 활성화 하지 않을 경우 스크립트를 통해 쿠키에 접근할 수 있어 세션 하이재킹(Session Hijacking) 취약점 발생
