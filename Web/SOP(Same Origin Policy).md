@@ -34,9 +34,9 @@
   + Preflight 요청일 때는 요청도 불가
 + 또한 Cross Origin인 경우에도 embedding 가능
   + <script src=""></script>
-  + CSS : <link rel="stylesheet" href="">
-  + <img>, <video>, <audio>
-  + <object>, <embed>
+  + CSS : `<link rel="stylesheet" href="">`
+  + `<img>, <video>, <audio>`
+  + `<object>, <embed>`
   + @font-face
   + <iframe>
 + 하지만 Cross Origin인 경우 서버로부터 응답받은 리소스에 접근(read) 불가능
