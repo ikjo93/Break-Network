@@ -22,7 +22,7 @@
 
 ### SameSite Lax 에시
 ```
-현재 document.origin = "https://ikjo.com"
+현재 document.location.origin = "https://ikjo.com"
 <img src="https://hello.com/1.png"/> → 쿠키 전송 X
 
 <a href="https://hello.com">Link</a> → 쿠키 전송 O
