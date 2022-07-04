@@ -4,7 +4,7 @@
   + 판단 내용 : naver.com
 
 ### SameSite 효과
-+ Cross Site인 경우 응답받은 쿠키 값에 접근 불가 및 서버에 전송 불가
++ Cross Site인 경우 클라이언트는 서버로부터 응답받은 쿠키를 서버에 전송할 수 없다.
 
 ### SameSite 속성
 + 쿠키에 부여하는 속성 값으로 None, Lax, Strict가 있다.
