@@ -1,5 +1,7 @@
 ### SOP(Same Origin Policy)
 + Same Origin ↔ Cross-Origin
++ 브라우저의 정책
+  + Postman이나 Spring 등에서 API 호출 시에는 CORS(Cross-origin resource sharing) 이슈 X
 + 한 origin으로부터 로드된 document 또는 script가 다른 origin의 리소스와 상호작용 할 수 있는 방법을 제한하는 중요한 보안 메커니즘
 + document 내에서 외부 리소스들과 상호 작용할 때 외부 리소스의 orgin이 document의 origin과 다른 경우에 제한을 둠
   + XMLHttpRequest(), widnow.open, iframe 등
