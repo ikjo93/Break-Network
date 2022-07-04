@@ -33,7 +33,7 @@
 ### Cross-origin network access
 + Cross-Origin인 경우에도 다른 서버에 자원을 요청(write)하는 것 자체는 가능
   + 이로 인해 CSRF 공격이 가능한 것
-  + Preflight 요청일 때는 요청도 불가
+  + Preflight 요청일 때는 요청도 불가(요청에는 Simple Request, Preflight Request 두 종류가 있다.)
 + 또한 Cross Origin인 경우에도 embedding 가능
   + <script src=""></script>
   + CSS : `<link rel="stylesheet" href="">`
