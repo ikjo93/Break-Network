@@ -3,6 +3,9 @@
   + example. `https://www.naver.com:443/path/index.html`
   + 판단 내용 : naver.com
 
+### SameSite 효과
++ Cross Site인 경우 응답받은 쿠키 값에 접근 불가 및 서버에 전송 불가
+
 ### SameSite 속성
 + 쿠키에 부여하는 속성 값으로 None, Lax, Strict가 있다.
 + None
