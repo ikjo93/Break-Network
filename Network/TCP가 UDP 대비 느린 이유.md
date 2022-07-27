@@ -7,9 +7,10 @@
 클라이언트는 그 즉시 시퀀스 번호 3번의 데이터를 서버에 보내는 게 아니라 3번의 ACK 번호가 올 때까지 WAIT 상태에 빠짐 → 속도 지연
 
 서버는 윈도우 사이즈를 포함해서 3번의 ACK 번호를 클라이언트에 송신
-※ 윈도우 사이즈(window size) = TCP 버퍼의 전체 크기 → OS는 TCP 데이터를 TCP 버퍼에 채운다.
+※ 윈도우 사이즈(window size) = TCP 버퍼의 전체 크기(단위는 byte) → OS는 TCP 데이터를 TCP 버퍼에 채운다.
 
 클라이언트는 서버가 보낸 윈도우 사이즈 크기를 보니 3번 데이터를 수용할만한 공간이 없어 보여(Window size < MSS) 다시 WAIT 상태에 빠짐 → 속도 지연
+※ ACK 번호 보다 window size의 값이 커야한다.
 
 ※ 참고
 * MSSS(Maximum Segment Size) : (TCP 기반의 정보) 단지 TCP 데이터(페이로드) 길이 만을 의미 → TCP가 TCP 세그먼트 1개로 보낼 수 있는 최대 데이터 크기 → 기본값 : IPv4 536Byte, IPv6 : 1220Byte
